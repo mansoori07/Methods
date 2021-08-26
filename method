@@ -1,0 +1,16 @@
+public class MyClass
+{
+int x=3456789;
+public static void main(String args[]) 
+{
+MyClass obj  = new MyClass();
+obj.calculate();       //calling method
+}
+void calculate()
+{
+int td=x/(60*24);      //to find total no. of days
+int y=td/365;          //to calculate years
+int d=td-(y*365);      //to calculatw no. of days left
+System.out.println(x+" minutes have "+y+" years and "+d+" days");
+}
+}
